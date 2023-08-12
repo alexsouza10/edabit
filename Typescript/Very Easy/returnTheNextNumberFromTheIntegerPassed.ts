@@ -1,5 +1,5 @@
-const incrementNumber = (x: number): number => {
-    const result = x + 1;
+const incrementNumber = (input: number): number => {
+    const result = input + 1;
     return result;
 }
 
