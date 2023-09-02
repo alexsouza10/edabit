@@ -1,7 +1,7 @@
 def number_length(num):
     return len(str(num))
 
-# Example usage:
+
 length1 = number_length(10)
 print(length1)  # Print 2
 
