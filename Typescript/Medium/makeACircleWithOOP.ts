@@ -15,7 +15,7 @@ class Circle {
 }
 
 const circle1 = new Circle(11);
-console.log(circle1.getArea());
+console.log(circle1.getArea()); // Return 380.132711084365
 
 const circle2 = new Circle(4.44);
-console.log(circle2.getPerimeter());
+console.log(circle2.getPerimeter()); // Return 27.897342763877365
