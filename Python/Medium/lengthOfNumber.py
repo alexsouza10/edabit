@@ -9,4 +9,4 @@ length2 = number_length(5000)
 print(length2)  # Print 5
 
 length3 = number_length(0)
-print(length3)
+print(length3) # Print 1
