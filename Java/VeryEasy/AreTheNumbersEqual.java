@@ -11,7 +11,7 @@ public class AreTheNumbersEqual {
         boolean isSameNum;
         int num1 = 4;
         int num2 = 8;
-        isSameNum = (num1 == num2) ? true : false ;
-        System.out.println(isSameNum);
+        isSameNum = (num1 == num2) ? true : false;
+        System.out.println(isSameNum); //Output: false
     }
 }
