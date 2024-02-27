@@ -13,7 +13,7 @@ public class ReturnTheSumOfTwoNumbers {
         int x = 3; 
         int y = 2;
         int result = x + y;
-        System.out.println(result);
+        System.out.println(result); //Output: 5
     }
     
 }

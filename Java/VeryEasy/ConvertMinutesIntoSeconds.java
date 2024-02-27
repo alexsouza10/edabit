@@ -11,6 +11,6 @@ public class ConvertMinutesIntoSeconds {
         int num = 5;
         int minOfConvesion = 60;
         int convert = num*minOfConvesion;
-        System.out.println(convert);
+        System.out.println(convert); // Output: 300
     }
 }
