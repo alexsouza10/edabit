@@ -6,7 +6,6 @@ Example:
 SumOfTwoNumbers(3, 2) ➞ 5
  */
 
-package Java.Very_Easy;
 
 public class ReturnTheSumOfTwoNumbers {
     public static void main(String[] args) {
