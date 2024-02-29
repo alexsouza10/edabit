@@ -10,10 +10,8 @@ public class BasketballPoints {
         System.out.println(points); //Output: 62
     }
 
-    static int pointsTeams(int team1, int team2) {
-        int pointersScoredTeam1 = 2;
-        int pointersScoredTeam2 = 3;
-        int addPoints = (pointersScoredTeam1 * team1) + (pointersScoredTeam2 *team2);
+    static int pointsTeams(int twoPoints, int threePoints) {
+        int addPoints = (2 * twoPoints) + (3 * threePoints);
         return addPoints;
     }
 
