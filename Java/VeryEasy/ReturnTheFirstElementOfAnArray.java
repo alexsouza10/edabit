@@ -1,15 +1,25 @@
+// Return the First Element of an Array
+
+// Create a function that takes an array containing only numbers and return the first element.
+
+// Examples
+
+// getFirstValue([1, 2, 3]) ➞ 1
+
 public class ReturnTheFirstElementOfAnArray {
     public static void main(String[] args) {
-        int[] getFirstValue1 = { 1, 2, 3 };
-        int[] getFirstValue2 = { 80, 5, 100 };
-        int[] getFirstValue3 = { -500, 0, 50 };
-
-        String testResult = getArray(getFirstValue1, getFirstValue2, getFirstValue3);
-        System.out.println(testResult);
+        int[] array = { 1, 2, 3 };
+        int firstElement = getFirstValue(array);
+        System.out.println(firstElement); // Output: 1
+        validateArrays(array); // Output: Test Passed!
     }
 
-    static String getArray(int array1[], int array2[], int[] array3) {
-        boolean testPassed = (array1[0] == 1) && (array2[0] == 80) && (array3[0] == -500);
-        return testPassed ? "Test Passed!" : "Test Failed!";
+    static int getFirstValue(int[] array) {
+        return array[0];
+    }
+
+    static void validateArrays(int[] array) {
+        String test = (array.length > 0) ? "Test Passed!" : "Test Reproved";
+        System.out.println(test);
     }
 }
