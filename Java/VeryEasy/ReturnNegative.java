@@ -21,12 +21,9 @@ public class ReturnNegative {
     }
 
     static int returnNegative(int num) {
-        if (num > 0) {
+        if (num >= 0) {
             System.out.println(num - 2 * num);
             return num;
-        // } else if (num == 0) {
-        //     System.out.println(0);
-        //     return num;
         } else {
             System.out.println(num);
             return (num);
