@@ -17,8 +17,8 @@ public class DividesEvenly {
     }
 
     static boolean checkNum(int a, int b) {
-        boolean checador = (a % b) == 0 ? true : false;
-        System.out.println(checador);
-        return checador;
+        boolean checkNum = (a % b) == 0 ? true : false;
+        System.out.println(checkNum);
+        return checkNum;
     }
 }
