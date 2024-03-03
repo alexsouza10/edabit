@@ -14,11 +14,16 @@
 
 // profitableGamble(0.9, 3, 2) ➞ true
 
-
 public class ProfitableGamble {
     public static void main(String[] args) {
-        
+        profitable(0.2, 50, 9); //Output: true
+        profitable(0.9, 1, 2); //Output: false
+        profitable(0.9, 3, 2); //Output: true
     }
 
-
+    static boolean profitable(double prob, int prize, int pay) {
+        boolean result = (prob * prize) > pay ? true : false;
+        System.out.println(result);
+        return result;
+    }
 }

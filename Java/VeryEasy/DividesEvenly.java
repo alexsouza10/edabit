@@ -11,9 +11,9 @@
 
 public class DividesEvenly {
     public static void main(String[] args) {
-        checkNum(98, 7);
-        checkNum(85, 4);
-        
+        checkNum(98, 7); // Output: true
+        checkNum(85, 4); // Output: false
+
     }
 
     static boolean checkNum(int a, int b) {
