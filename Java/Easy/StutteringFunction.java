@@ -1,3 +1,21 @@
+/*
+
+Stuttering Function
+Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.
+
+Examples
+stutter("incredible") ➞ "in... in... incredible?"
+
+stutter("enthusiastic") ➞ "en... en... enthusiastic?"
+
+stutter("outstanding") ➞ "ou... ou... outstanding?"
+
+Assume all inputs are in lower case and at least two-character long.
+
+Check on the Resources tab for more helpful tips on String formatting in Java.
+
+ */
+
 package Easy;
 
 public class StutteringFunction {
@@ -8,9 +26,12 @@ public class StutteringFunction {
     }
 
     static void stutter(String word) {
+        StringBuilder stutteredWord = new StringBuilder();
 
-        String firstTwoLetters = word.substring(0, 2);
-        String stutteredWord = firstTwoLetters + "... " + firstTwoLetters + "... " + word + "?";
-        System.out.println(stutteredWord);
+        stutteredWord.append(word.substring(0, 2)).append("... ").append(word.substring(0, 2)).append("... ");
+
+        stutteredWord.append(word).append("?");
+
+        System.out.println(stutteredWord.toString());
     }
 }
