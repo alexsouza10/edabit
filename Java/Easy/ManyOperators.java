@@ -24,23 +24,40 @@ package Easy;
 public class ManyOperators {
     public static void main(String[] args) {
         operate(1, 2, "+"); // Output: 3
-        operate(7, 10, "-"); // Output: -3
+        operate(7, 10, "-");// Output: -3
         operate(20, 10, "%"); // Output: 0
     }
 
-    static void operate(int num1, int num2, String operator) {
-        if (operator == "+") {
-            System.out.println(num1 + num2);
-        } else if (operator == "-") {
-            System.out.println(num1 - num2);
-        } else if (operator == "*") {
-            System.out.println(num1 * num2);
-        } else if (operator == "%") {
-            System.out.println(num1 % num2);
-        } else if (operator == "/" && num2 != 0) {
-            System.out.println(num1 / num2);
-        } else {
-            System.out.println("Condition not accepted");
+    static int operate(int num1, int num2, String operator) {
+        int result = 0;
+        switch (operator) {
+            case "+":
+                result = num1 + num2;
+                System.out.println(result);
+                break;
+            case "-":
+                result = num1 - num2;
+                System.out.println(result);
+                break;
+            case "*":
+                result = num1 * num2;
+                System.out.println(result);
+                break;
+            case "%":
+                result = num1 % num2;
+                System.out.println(result);
+                break;
+            case "/":
+                if (num2 == 0) {
+                    System.out.println("Condition not accepted");
+                } else {
+                    result = num1 = num2;
+                    System.out.println(result);
+                }
+                break;
+            default:
+                break;
         }
+        return result;
     }
 }
