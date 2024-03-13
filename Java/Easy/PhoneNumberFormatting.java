@@ -30,22 +30,14 @@ public class PhoneNumberFormatting {
     static String formatPhoneNumber(int[] nums) {
         StringBuilder formattedNumber = new StringBuilder("(");
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < nums.length; i++) {
+            if (i == 3) {
+                formattedNumber.append(") ");
+            } else if (i == 6) {
+                formattedNumber.append("-");
+            }
             formattedNumber.append(nums[i]);
         }
-
-        formattedNumber.append(") ");
-
-        for (int i = 3; i < 6; i++) {
-            formattedNumber.append(nums[i]);
-        }
-
-        formattedNumber.append("-");
-
-        for (int i = 6; i < 10; i++) {
-            formattedNumber.append(nums[i]);
-        }
-
         return formattedNumber.toString();
     }
 }
